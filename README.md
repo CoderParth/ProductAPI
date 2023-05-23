@@ -47,49 +47,88 @@ npm run dev
 ## API Endpoints
 
 Get all products
+
 URL: /products
+
 Method: GET
+
+With Query: GET /products?name={name}&quantity={quantity}&stock={stock}&category={category}&isActive={isActive}&page={page}&limit={limit}
+
+Example: /products?name=Shirt&quantity=10&stock=20&category=clothing&isActive=true&page=1&limit=10
+
 Query Parameters:
+
 name (optional): Filter products by name
+
 quantity (optional): Filter products by quantity (non-negative integer)
+
 stock (optional): Filter products by stock (non-negative integer)
+
 category (optional): Filter products by category
+
 isActive (optional): Filter products by active status (true or false)
+
 page (optional): Paginate results, specify the page number (1-based)
+
 limit (optional): Paginate results, specify the maximum number of items per page
+
 Response: List of products that match the specified filters and pagination settings
 
 Create a new product
+
 URL: /products
+
 Method: POST
+
 Request Body: JSON object containing product data (name, description, stock, quantity, category, isActive)
+
 Response: Newly created product object
 
 Get a single product by ID
+
 URL: /products/:id
+
 Method: GET
+
 Path Parameters:
 id: ID of the product
+
 Response: Product object with the specified ID
 
 Get a single product by name
+
 URL: /products/name/:name
+
 Method: GET
+
 Path Parameters:
+
 name: Name of the product
+
 Response: Product object with the specified name
 
 Update a product
+
 URL: /products/:id
+
 Method: PUT
+
 Path Parameters:
+
 id: ID of the product
+
 Request Body: JSON object containing updated product data (name, description, stock, quantity, category, isActive)
+
 Response: Updated product object
 
 Delete a product
+
 URL: /products/:id
+
 Method: DELETE
+
 Path Parameters:
+
 id: ID of the product
+
 Response: No content (204)
