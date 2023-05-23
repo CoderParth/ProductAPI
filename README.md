@@ -46,7 +46,7 @@ npm run dev
 
 ## API Endpoints
 
-Get all products
+## Get all products
 
 URL: /products
 
@@ -74,7 +74,7 @@ limit (optional): Paginate results, specify the maximum number of items per page
 
 Response: List of products that match the specified filters and pagination settings
 
-Create a new product
+## Create a new product
 
 URL: /products
 
@@ -84,7 +84,7 @@ Request Body: JSON object containing product data (name, description, stock, qua
 
 Response: Newly created product object
 
-Get a single product by ID
+## Get a single product by ID
 
 URL: /products/:id
 
@@ -95,7 +95,7 @@ id: ID of the product
 
 Response: Product object with the specified ID
 
-Get a single product by name
+## Get a single product by name
 
 URL: /products/name/:name
 
@@ -107,7 +107,7 @@ name: Name of the product
 
 Response: Product object with the specified name
 
-Update a product
+## Update a product
 
 URL: /products/:id
 
@@ -121,7 +121,7 @@ Request Body: JSON object containing updated product data (name, description, st
 
 Response: Updated product object
 
-Delete a product
+## Delete a product
 
 URL: /products/:id
 
